@@ -18,4 +18,5 @@ public class Truck extends Car {
     public static void truck(){
         System.out.println("Я трак");
     }
+
 }
