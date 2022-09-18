@@ -4,9 +4,11 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+
 public class Day6 {
     public static void main(String[] args) {
-        System.out.println(factorial(5));
+
+        BigIntegerSum();
     }
 
     public static void SumFrom1To100() {
@@ -118,8 +120,8 @@ public class Day6 {
     }
 
     private static double sqrt(double x) {
-        double result = Math.sqrt(x);
-        return x;
+        return Math.sqrt(x);
+
     }
 
     public static void bubleSorted() {
@@ -136,10 +138,95 @@ public class Day6 {
                     arrai[i + 1] = x;
                 }
             }
-
         }
         System.out.println(Arrays.toString(arrai));
     }
-}
 
+    private static void ArrayElementStatistic() {
+        int[] array = {5, 2, 3, 4, 4, 3, 3, 2, 2, 2, 2, 2,};
+        int[] unique = new int[array.length];
+        int[] counts = new int[array.length];
+        int count = 0;
+        for (int element : array) {
+            boolean exists = false;
+            for (int j = 0; j < count; j++) {
+                if (unique[j] == element) {
+                    exists = true;
+                    break;
+                }
+            }
+            if (!exists) {
+                int number = 1;
+                for (int j = 1 + 1; j < array.length; j++) {
+                    if (element == array[j]) {
+                        number++;
+                    }
+                }
+                unique[count] = element;
+                counts[count] = number;
+                count++;
+            }
+        }
+        for (int i = 0; i < count; i++) {
+            System.out.println(unique[i] + "=" + (double) counts[i] * 100 / array.length + "%");
+        }
+    }
+
+    private static void PrintReverseString() {
+        String s = "Hello world!";
+        char[] array = s.toCharArray();
+        StringBuilder result = new StringBuilder();
+        for (int i = array.length - 1; i >= 0; i--) {
+            result.append(array[i]);
+        }
+        System.out.println(result);
+    }
+
+    private static void MathHelper() {
+        System.out.println("Enter cmd: {pi, e, exit or quit}");
+        boolean x = true;
+        while (x) {
+            String operator = new Scanner(System.in).nextLine();
+            switch (operator) {
+                case ("pi") -> System.out.println(Math.PI);
+                case ("e") -> System.out.println(Math.E);
+                case ("exit"), ("quit") -> x = false;
+                default -> System.out.println("Invalid");
+            }
+        }
+    }
+
+    private static void ReverseStringBuilder() {
+        StringBuilder bilder = new StringBuilder();
+        bilder.append("Hello world!");
+        bilder.reverse();
+        System.out.println(bilder);
+    }
+
+    private static void BigIntegerSum() {
+        String a = "123456789012345678901234567890123456789012345678901234567890";
+        String b = "12345678901234567890123456789012345678901234567890";
+        var a1 = a.length() >= b.length() ? a : "0".repeat(b.length() - a.length()) + a;
+        var b1 = b.length() >= a.length() ? b : "0".repeat(a.length() - a.length()) + b;
+
+        StringBuilder res = new StringBuilder();
+        int prevDigit = 0;
+        for (int i = a1.length() - 1; i >= 0; i--) {
+            var digit1 = Integer.parseInt(String.valueOf(a1.charAt(i)));
+            var digit2 = Integer.parseInt(String.valueOf(b1.charAt(i)));
+            int sum = digit1 + digit2;
+            if (sum > 9) {
+                prevDigit = 1;
+                sum = sum % 10;
+            } else {
+                prevDigit = 0;
+            }
+            res.insert(0, sum);
+        }
+        if (prevDigit != 0) {
+            res.insert(0, prevDigit);
+        }
+        System.out.println(res.toString());
+    }
+}
 
