@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Day6 {
     public static void main(String[] args) {
 
-        BigIntegerSum();
+        ArrayElementStatistic();
     }
 
     public static void SumFrom1To100() {
