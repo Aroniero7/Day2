@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50a21e0a-b70f-4efb-b089-d22738f73127" name="Changes" comment="Day2" />
+    <list default="true" id="50a21e0a-b70f-4efb-b089-d22738f73127" name="Changes" comment="Day2">
+      <change afterPath="$PROJECT_DIR$/lib/jsoup-1.15.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day19/Sorted.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day19/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day19/day.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day20/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day20/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day20/Task3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day20/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Day2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day19/Day19_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/day19/Day19_1.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -41,14 +54,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Арониеро/IdeaProjects/Bookstore",
+    "last_opened_file_path": "C:/Users/vasya/IdeaProjects/Day2/lib/jsoup-1.15.3.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vasya\IdeaProjects\Day2\lib" />
+      <recent name="C:\Users\vasya\IdeaProjects\Day2\data\11" />
+      <recent name="C:\Users\vasya\IdeaProjects\Day2\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Task4">
     <configuration name="Day2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day2" />
       <module name="Day2" />
@@ -56,8 +80,64 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day20.Task4" />
+      <module name="Day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day19.day" />
+      <module name="Day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day19.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day20.Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day20.Task2" />
+      <module name="Day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day20.Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day20.Task3" />
+      <module name="Day2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day20.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task4" />
+        <item itemvalue="Application.day20.Task3" />
+        <item itemvalue="Application.day20.Task2" />
+        <item itemvalue="Application.day" />
         <item itemvalue="Application.Day2" />
       </list>
     </recent_temporary>
@@ -71,6 +151,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662997650951</updated>
       <workItem from="1662997652284" duration="8777000" />
+      <workItem from="1671472410053" duration="1103000" />
+      <workItem from="1671535851750" duration="9108000" />
     </task>
     <task id="LOCAL-00001" summary="Day2">
       <created>1662997915105</created>

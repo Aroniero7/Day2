@@ -43,10 +43,10 @@ public class Day19_1 {
 
         //алфавит
         ArrayList<Character> alphabet = new ArrayList<Character>();
-        for (int i = 0; i < 32; i++) {
-            alphabet.add((char) ('а' + i));
+        for (int i = 0; i < 26; i++) {
+            alphabet.add((char) ('a' + i));
         }
-        alphabet.add(6, 'ё');
+      // alphabet.add(6, 'ё');
 
         //ввод строк
         ArrayList<String> list = new ArrayList<String>();
